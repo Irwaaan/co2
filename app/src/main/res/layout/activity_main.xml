@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.MainActivity">
+
+    <ImageView
+        android:contentDescription="@string/kertas"
+        android:id="@+id/ikertas1"
+        android:layout_width="92dp"
+        android:layout_height="85dp"
+        android:layout_marginTop="40dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.103"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ibatu1"
+        app:srcCompat="@drawable/kertas" />
+    <ImageView
+        android:contentDescription="@string/computer_memilih_kertas"
+        android:id="@+id/ikertas2"
+        android:layout_width="92dp"
+        android:layout_height="85dp"
+        android:layout_marginTop="40dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.952"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ibatu2"
+        app:srcCompat="@drawable/kertas" />
+    <ImageView
+        android:id="@+id/ibatu1"
+        android:layout_width="92dp"
+        android:layout_height="85dp"
+        android:layout_marginTop="280dp"
+        android:backgroundTintMode="add"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.103"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/batu" />
+
+    <ImageView
+        android:contentDescription="@string/computer_memilih_batu"
+        android:id="@+id/ibatu2"
+        android:layout_width="92dp"
+        android:layout_height="85dp"
+        android:layout_marginTop="276dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.949"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/batu" />
+    <ImageView
+        android:contentDescription="@string/gunting"
+        android:id="@+id/igunting1"
+        android:layout_width="92dp"
+        android:layout_height="85dp"
+        android:layout_marginTop="36dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.103"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ikertas1"
+        app:srcCompat="@drawable/gunting" />
+    <ImageView
+        android:contentDescription="@string/computer_memilih_gunting"
+        android:id="@+id/igunting2"
+        android:layout_width="92dp"
+        android:layout_height="85dp"
+        android:layout_marginTop="40dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.949"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ikertas2"
+        app:srcCompat="@drawable/gunting" />
+
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="141dp"
+        android:layout_height="127dp"
+        android:layout_marginTop="36dp"
+        android:contentDescription="@string/kertas_gunting_batu"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.462"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/kgb" />
+
+    <ImageView
+        android:id="@+id/ipemain1"
+        android:layout_width="130dp"
+        android:layout_height="27dp"
+        android:layout_marginTop="228dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.056"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/pemain" />
+
+    <ImageView
+        android:id="@+id/icom"
+        android:layout_width="130dp"
+        android:layout_height="27dp"
+        android:layout_marginTop="228dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.888"
+        app:layout_constraintStart_toEndOf="@+id/ipemain1"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/computer" />
+
+
+    <TextView
+        android:id="@+id/tvResult"
+        android:layout_width="98dp"
+        android:layout_height="91dp"
+        android:fontFamily="@font/comicbold"
+        android:rotation="-20"
+        android:text="@string/vs"
+        android:textColor="@color/red"
+        android:textSize="90sp"
+
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.536"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.593"
+        android:textColorLink="@color/red"/>
+    <TextView
+        android:id="@+id/tvMenang"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/comicbold"
+        android:rotation="-20"
+        android:text="Plater1 Menang"
+        android:textColor="@color/white"
+        android:backgroundTintMode="add"
+        android:background="@color/green"
+        android:textSize="40sp"
+
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.536"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.593"
+        android:textColorLink="@color/red"/>
+
+
+    <ImageView
+
+        android:id="@+id/iulang"
+        android:layout_width="44dp"
+        android:layout_height="39dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.956"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/igunting2"
+        app:layout_constraintVertical_bias="0.802"
+        app:srcCompat="@drawable/refresh" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
